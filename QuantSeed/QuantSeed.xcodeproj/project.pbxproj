@@ -12,9 +12,13 @@
 		6E4DFE8E232704AE00D54318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DFE8C232704AE00D54318 /* Main.storyboard */; };
 		6E4DFE90232704AF00D54318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DFE8F232704AF00D54318 /* Assets.xcassets */; };
 		6E4DFE93232704AF00D54318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DFE91232704AF00D54318 /* LaunchScreen.storyboard */; };
+		6E4DFE9B2327057C00D54318 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DFE9A2327057C00D54318 /* GoogleService-Info.plist */; };
+		F3DA7E5F4A2669AD3B57028F /* Pods_QuantSeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC07B72555DCC8F15C553B24 /* Pods_QuantSeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E95A2956E6D5E0EB12A8814 /* Pods-QuantSeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantSeed.debug.xcconfig"; path = "Target Support Files/Pods-QuantSeed/Pods-QuantSeed.debug.xcconfig"; sourceTree = "<group>"; };
+		67A3AEB4C59CC6E186C771D8 /* Pods-QuantSeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantSeed.release.xcconfig"; path = "Target Support Files/Pods-QuantSeed/Pods-QuantSeed.release.xcconfig"; sourceTree = "<group>"; };
 		6E4DFE85232704AE00D54318 /* QuantSeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantSeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4DFE88232704AE00D54318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E4DFE8A232704AE00D54318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		6E4DFE8F232704AF00D54318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4DFE92232704AF00D54318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4DFE94232704AF00D54318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4DFE9A2327057C00D54318 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC07B72555DCC8F15C553B24 /* Pods_QuantSeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuantSeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DA7E5F4A2669AD3B57028F /* Pods_QuantSeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26EF270E78B75EC440A268FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC07B72555DCC8F15C553B24 /* Pods_QuantSeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E4DFE7C232704AD00D54318 = {
 			isa = PBXGroup;
 			children = (
 				6E4DFE87232704AE00D54318 /* QuantSeed */,
 				6E4DFE86232704AE00D54318 /* Products */,
+				E0162FF8D4566B5361ED505C /* Pods */,
+				26EF270E78B75EC440A268FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,19 @@
 				6E4DFE8F232704AF00D54318 /* Assets.xcassets */,
 				6E4DFE91232704AF00D54318 /* LaunchScreen.storyboard */,
 				6E4DFE94232704AF00D54318 /* Info.plist */,
+				6E4DFE9A2327057C00D54318 /* GoogleService-Info.plist */,
 			);
 			path = QuantSeed;
+			sourceTree = "<group>";
+		};
+		E0162FF8D4566B5361ED505C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E95A2956E6D5E0EB12A8814 /* Pods-QuantSeed.debug.xcconfig */,
+				67A3AEB4C59CC6E186C771D8 /* Pods-QuantSeed.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E4DFE97232704AF00D54318 /* Build configuration list for PBXNativeTarget "QuantSeed" */;
 			buildPhases = (
+				E5D4679E1126554BA83BFB4A /* [CP] Check Pods Manifest.lock */,
 				6E4DFE81232704AE00D54318 /* Sources */,
 				6E4DFE82232704AE00D54318 /* Frameworks */,
 				6E4DFE83232704AE00D54318 /* Resources */,
+				0697AD1D6BCB42A13BDFE847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4DFE93232704AF00D54318 /* LaunchScreen.storyboard in Resources */,
+				6E4DFE9B2327057C00D54318 /* GoogleService-Info.plist in Resources */,
 				6E4DFE90232704AF00D54318 /* Assets.xcassets in Resources */,
 				6E4DFE8E232704AE00D54318 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0697AD1D6BCB42A13BDFE847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantSeed/Pods-QuantSeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuantSeed/Pods-QuantSeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuantSeed/Pods-QuantSeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D4679E1126554BA83BFB4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuantSeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E4DFE81232704AE00D54318 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		6E4DFE98232704AF00D54318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E95A2956E6D5E0EB12A8814 /* Pods-QuantSeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		6E4DFE99232704AF00D54318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A3AEB4C59CC6E186C771D8 /* Pods-QuantSeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
